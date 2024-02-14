@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="그린훼스코 태양광 발전 통합 모니터링">
+<link rel="shortcut icon" href="/imgs/common/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="/imgs/common/favicon.ico" type="image/x-icon" />
+
+<title>KTC인증_MLPE그래프</title>
+
+<link rel="stylesheet" href="/css/style.css">
+
+<script src="/jquery/jquery.min.js"></script>
+<script src="/js/common/common.js"></script>
+
+<script src="/chartJs/chart.min.js" defer></script>
+<script src="/js/common/datefrom.js" defer></script>
+
+
+<script src="/moment/moment.min.js"></script>
+
+<style>
+    #graph1 {
+        margin: auto;
+        margin-top: 50px;
+        height: 500px;
+        width: 100%;
+        background-color: black;
+    }
+    #graph2 {
+        margin: auto;
+        margin-top: 10px;
+        height: 250px;
+        width: 100%;
+        background-color: black;
+    }
+</style>
+<script>
+    let UpToMinutes = 0;
+    let isTimeLimit = true;
+    let file = '';
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+<script src="/js/isExcelFile.js" defer></script>
+<script src="/js/common/menuCommon.js" defer></script>

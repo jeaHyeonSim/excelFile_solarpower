@@ -1,0 +1,33 @@
+<html lang="ko">
+	<head>
+		<%-include('partials/header.html') %>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+		<!-- <script src="/js/2024_02_01.js" defer></script> -->
+		
+		<script src="/js/2024.js" defer></script>
+		<script>
+			const UpToMinutes = `<%= UpToMinutes %>`;
+			const timeLimitIs = `<%= timeLimitIs %>`;
+			const file = `<%= file %>`;
+		</script>
+	</head>
+	<body>
+
+		<div id="wrap">
+			<%-include('partials/nav.html') %>
+
+			<div id="mainContent" class="container">
+				<div id="graph1" class="graphBox">
+					<canvas id="line_graph" style="width: 100%; height: 100%;" ></canvas>
+				</div>
+				<div id="graph2" class="graphBox">
+					<canvas id="line_graph2" style="width: 100%; height: 100%;" ></canvas>
+				</div>
+
+			</div>
+		</div>
+		<%-include('partials/footer.html') %>
+	</body>
+
+	
+</html>

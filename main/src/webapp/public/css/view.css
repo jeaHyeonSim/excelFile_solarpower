@@ -1,0 +1,68 @@
+.visual {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    color: #fff;
+    font-size: 25px;
+}
+.notice-group {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.notice-search {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 10px;
+}
+.notice-search > input {
+    width: 300px;
+    margin-right: 10px;
+}
+.notice-search > select {
+    margin-right: 10px;
+}
+/* table */
+.notice-table {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 50px;
+}
+.notice-table th {
+    border-top: 1px solid #333;
+    text-align: right;
+}
+.notice-table td {
+    border-top:1px solid #ddd;
+}
+.notice-table tr:last-child td {
+    /*border-bottom: 1px solid #333;*/
+}
+.notice-table a:hover {
+    text-decoration: underline;
+}
+.notice-table thead {
+    background: #f1f1f1;
+}
+.notice-table td,.notice-table th {
+    padding: 15px;
+}
+.notice-table thead span:not(:last-child)::after {
+    content: "|";
+    padding: 0 5px;
+}
+.board-btn-group {
+    /*margin-top: 10px;*/
+    display: flex;
+    justify-content: end;
+}
+.btn-group div {
+    /*margin-left: 5px;*/
+}
+
+.add-files li:not(:first-child){
+    margin-top: 5px;
+}

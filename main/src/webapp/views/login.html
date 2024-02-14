@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Language" content="ko" >
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="/imgs/common/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="/imgs/common/favicon.ico" type="image/x-icon" />
+    
+	<title>태양광 발전 통합 모니터링 - 로그인</title>
+
+    <link href="/css/base.css" rel="stylesheet" type="text/css" >
+    <link href="/css/layout.css" rel="stylesheet" type="text/css" >
+    
+	<style>	
+		.px {
+			position: absolute;
+			width: 205px !important;
+			right: 80px;
+			bottom: 120px;
+			height: auto !important;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrap">
+	    <div id="container">
+	        <h7>
+                <img id="main-logo" style="height: 61px;" class="d-inline-block align-top mr-2" src="/imgs/gf_logo_02.png" alt="logo">
+            </h7>
+			<h1>
+                태양광 발전 통합 모니터링
+            </h1>
+            <div class="content_area">
+	            <h2>로그인</h2>
+	            <div>
+					<form id="loginForm" name="loginForm" method="post">
+		                <input type="text" id="userId" name="userId" value="<%= userID %>" placeholder="아이디를 입력하세요."/><br />
+		                <input type="password" id="userPw" name="userPw" value="" placeholder="비밀번호를 입력하세요." maxlength="12" onkeydown="javascript:if (event.keyCode == 13) { actionLoginCheck(); return false; }" />
+	                </form>
+					<% if(errMsg != ""){ %>
+						<div class="errMsg-login"><%= errMsg %></div>
+					<% } %>
+					<button onclick="javascript:actionLoginCheck(); return false;">확&emsp;인</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<script src="/js/login.js"></script>
+</body>
+</html>
